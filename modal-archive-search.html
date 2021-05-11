@@ -1,0 +1,139 @@
+
+            <div class="modal-header">
+                <div class="modal-title">
+            		<h3>아카이브 상세 검색</h3>
+            	</div>
+            	<button type="button" class="close" data-dismiss="modal" aria-label="Close">close</button>
+            </div>
+            <div class="modal-body">
+            	<form class="form">
+            		<div class="form__group">
+						<input type="search" id="archive-search" class="form__field" placeholder="검색어 입력">
+						<label for="archive-search" class="form__label">검색어</label>
+					</div>
+					<div class="form__group">
+						<div class="i-group">
+							<label class="checkbox-container" for="field-total">전체
+								<input type="checkbox" id="field-total" name="field">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox-container" for="field-general">총류
+								<input type="checkbox" id="field-general" name="field">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox-container" for="field-philosophy">철학
+								<input type="checkbox" id="field-philosophy" name="field">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox-container" for="field-religion">종교
+								<input type="checkbox" id="field-religion" name="field">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox-container" for="field-social-science">사회과학
+								<input type="checkbox" id="field-social-science" name="field">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox-container" for="field-science">순수과학
+								<input type="checkbox" id="field-science" name="field">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox-container" for="field-tech-science">기술과학
+								<input type="checkbox" id="field-tech-science" name="field">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox-container" for="field-art">예술
+								<input type="checkbox" id="field-art" name="field">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox-container" for="field-language">언어
+								<input type="checkbox" id="field-language" name="field">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox-container" for="field-literature">문학
+								<input type="checkbox" id="field-literature" name="field">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox-container" for="field-history">역사
+								<input type="checkbox" id="field-history" name="field">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+						<label class="form__label">분야</label>
+					</div>
+					<div class="form__group">
+						<div class="i-group">
+							<label class="checkbox-container" for="type-total">전체
+								<input type="checkbox" id="type-total" name="type">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox-container" for="type-report">보고서
+								<input type="checkbox" id="type-report" name="type">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox-container" for="type-treatise">논문
+								<input type="checkbox" id="type-treatise" name="type">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox-container" for="type-book">단행본
+								<input type="checkbox" id="type-book" name="type">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox-container" for="type-serial">정기간행물
+								<input type="checkbox" id="type-serial" name="type">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox-container" for="type-seminar">세미나
+								<input type="checkbox" id="type-seminar" name="type">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox-container" for="type-old-book">고문헌
+								<input type="checkbox" id="type-old-book" name="type">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox-container" for="type-old-map">고지도
+								<input type="checkbox" id="type-old-map" name="type">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox-container" for="type-photo">사진
+								<input type="checkbox" id="type-photo" name="type">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox-container" for="type-video">동영상
+								<input type="checkbox" id="type-video" name="type">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox-container" for="type-sound">구술 &#40;음성&#41;
+								<input type="checkbox" id="type-sound" name="type">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox-container" for="type-newspaper">신문기사
+								<input type="checkbox" id="type-newspaper" name="type">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox-container" for="type-etc">기타
+								<input type="checkbox" id="type-etc" name="type">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+						<label class="form__label">유형</label>
+					</div>
+					<div class="form-row">
+	            		<div class="form__group">
+							<input type="text" id="archive-writer" class="form__field" placeholder=" ">
+							<label for="archive-writer" class="form__label">저자 &#40;기관&#41; 명</label>
+						</div>
+	            		<div class="form__group form-fromto">
+							<input type="text" id="archive-year-from" class="form__field" placeholder="예 : 1960">
+							<div>
+								<span>&dash;</span>
+								<input type="text" id="archive-year-to" class="form__field" placeholder="예 : 2000">
+							</div>
+							<label class="form__label">연도</label>
+						</div>
+					</div>
+            	</form>
+            </div>
+            <div class="modal-footer">
+            	<button type="submit" class="btn btn-fill-primary">검색</button>
+            	<button type="button" class="btn btn-outline"><i>refresh</i>초기화</button>
+            </div>

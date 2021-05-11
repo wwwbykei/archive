@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="robots" content="ALL">
+<meta name="googlebot" content="ALL">
+<meta name="description" content="제주학은 제주의 언어 &middot; 역사 &middot; 민속 등을 담는 그릇이다">
+<meta name="keywords" content="제주학 연구센터">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="제주학 연구센터">
+<meta name="application-name" content="제주학 연구센터">
+<meta name="msapplication-TileColor" content="#bga495">
+<meta name="theme-color" content="#ffffff">
+<title>제주학 연구센터</title>
+<link rel="stylesheet" href="css/style.css">
+<!--[if lt IE 9]>
+<script src="js/respond.min.js"></script>
+<script src="js/IE9.js"></script>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/dropdown.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/tab.js"></script>
+<script src="js/tooltipster.bundle.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script>
+$( document ).ready( function(){
+	$( ".main-image" ).slick({
+		dots: true,
+	    customPaging: function(slider, i) { 
+	        return '<span>0'+ (i + 1) +'</span><span>' + $(slider.$slides[i]).attr('title') + '</span>';
+	    },
+	    arrows: false,
+	    slidesToShow: 1,
+	    slidesToScroll: 1,
+	    fade: true
+	});
+	$( ".section.news .banner" ).slick({
+		dots: true,
+	    arrows: false,
+	    slidesToShow: 1,
+	    slidesToScroll: 1
+	});
+	$( ".section.photo .list-card" ).slick({
+		dots: false,
+	    arrows: true,
+	    slidesToShow: 3,
+	    slidesToScroll: 3,
+	    prevArrow : "<button type='button' class='slick-prev'>arrow_back</button>",
+	    nextArrow : "<button type='button' class='slick-next'>arrow_forward</button>",
+	    responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 2,
+	    			slidesToScroll: 2
+	    		}
+			},
+			{
+				breakpoint: 768,
+				settings: 'unslick'
+			}
+		]
+	});
+});
+</script>
+<script src="js/style.js"></script>
+</head>
+
+<body class="page-home">
+<a href="#container">콘텐츠 바로가기</a>
+<div id="top"></div>
+
+<header class="global-header"></header>
+
+<div id="container">
+	<ul class="nav-direct-links">
+		<li><a href="about-greetings.html"><i class="material-icons">business</i>센터소개</a></li>
+		<li><a href="archive-list.html"><i class="material-icons-outlined">inventory_2</i>아카이브</a></li>
+	</ul>
+	<ul class="main-image">
+		<li title="제주학" style="background-image:url(images/bg-home-study.jpg)">
+			<div>
+				<p>제주학은 제주의 언어 &middot; 역사 &middot; 민속 등을 담는 그릇이다</p>
+				<h3>열린 제주학, 따뜻한 제주학, 실천하는 제주학</h3>
+				<a href="about-greetings.html" class="btn-more">자세히보기<span>add</span></a>
+			</div>
+			<span>&copy; 서재철</span>
+		</li>
+		<li title="제주 역사" style="background-image:url(images/bg-home-history.jpg)">
+			<div>
+				<h3>제주 역사</h3>
+				<p>민간소장자료를 중심으로 흩어져 있는 기록자료 발굴 및 활용</p>
+				<a href="archive-list.html" class="btn-more">더보기<span>add</span></a>
+			</div>
+			<span>&copy; 서재철</span>
+		</li>
+		<li title="제주어" style="background-image:url(images/bg-home-language.jpg)">
+			<div>
+				<h3>제주어</h3>
+				<p>기억 속 언어를 현실 언어로 바꾸는 제주어 조사연구와 일상언어화 실현</p>
+				<a href="archive-list.html" class="btn-more">더보기<span>add</span></a>
+			</div>
+		</li>
+		<li title="제주 민속" style="background-image:url(images/bg-home-folk.jpg)">
+			<div>
+				<h3>제주 민속</h3>
+				<p>공동체 삶의 기억과 생활문화의 전통에 대한 조사연구 및 재창조</p>
+				<a href="archive-list.html" class="btn-more">더보기<span>add</span></a>
+			</div>
+			<span>&copy; 서재철</span>
+		</li>
+		<li title="제주 해녀" style="background-image:url(images/bg-home-women.jpg)">
+			<div>
+				<h3>제주 해녀</h3>
+				<p>제주 바당을 기억하고 되살리는 해녀문화에 대한 조사연구와 세계화</p>
+				<a href="archive-list.html" class="btn-more">더보기<span>add</span></a>
+			</div>
+			<span>&copy; 서재철</span>
+		</li>
+	</ul><!--//main-image-->
+	
+	<div class="section news">
+		<div class="content-wrap">
+			<div class="board">
+				<ul class="nav-tab-fill">
+					<li class="active"><a data-toggle="tab" href="#tab-news" class="btn">센터소식</a></li>
+					<li><a data-toggle="tab" href="#tab-press" class="btn">언론보도</a></li>
+					<li><a data-toggle="tab" href="#tab-trend" class="btn">제주학 동향</a></li>
+				</ul>
+				<div class="tab-content">
+					<ul id="tab-news" class="tab-pane active list-home">
+						<li>
+							<div><span>2020-12</span>14</div>
+							<div>
+								<span>공지사항</span>
+								<a href="community-news-view.html" class="hyperlink">제주어 포럼 ‘제주어를 눌다’ 지상 중계 자료집 발간</a>
+							</div>
+						</li>
+						<li>
+							<div><span>2020-12</span>14</div>
+							<div>
+								<span>자료</span>
+								<a href="community-news-view.html" class="hyperlink">제2회 제주학 아카이브 '제주의 관혼상제' 사진 영상 공개 수집</a>
+							</div>
+						</li>
+						<li>
+							<div><span>2020-12</span>14</div>
+							<div>
+								<span>공지사항</span>
+								<a href="community-news-view.html" class="hyperlink">2021 제주학 총서 및 번역서 출판비 지원 공모 선정 결과</a>
+							</div>
+						</li>
+						<li class="desktop-only">
+							<div><span>2020-12</span>14</div>
+							<div>
+								<span>공지사항</span>
+								<a href="community-news-view.html" class="hyperlink">2021 제주학 연구비 지원 공모</a>
+							</div>
+						</li>
+						<li class="desktop-only">
+							<div><span>2020-12</span>14</div>
+							<div>
+								<span>공지사항</span>
+								<a href="community-news-view.html" class="hyperlink">2021년 2월 유가증권 구입 및 사용 내역</a>
+							</div>
+						</li>
+						<li class="desktop-only">
+							<div><span>2020-12</span>14</div>
+							<div>
+								<span>공지사항</span>
+								<a href="community-news-view.html" class="hyperlink">2021년 2월 업무추진비 집행 내역</a>
+							</div>
+						</li>
+					</ul><!--//tab-pane-->
+					<ul id="tab-press" class="tab-pane list-home">
+						<li>
+							<div><span>2020-12</span>14</div>
+							<div>
+								<a href="result-media-view.html" class="hyperlink">연구보고서 발간 『성 이시돌 목장 테쉬폰 주택 생활문화 조사 』한라일보</a>
+							</div>
+						</li>
+						<li>
+							<div><span>2020-12</span>14</div>
+							<div>
+								<a href="result-media-view.html" class="hyperlink">제주학연구센터와 제주평생교육장학진흥원 업무협약 체결</a>
+							</div>
+						</li>
+						<li>
+							<div><span>2020-12</span>14</div>
+							<div>
+								<a href="result-media-view.html" class="hyperlink">제주어종합상담실 문답사례집 《몰마농고장은 수선화마씨게》 발간</a>
+							</div>
+						</li>
+						<li class="desktop-only">
+							<div><span>2020-12</span>14</div>
+							<div>
+								<a href="result-media-view.html" class="hyperlink">[접수마감]제주학연구센터‧제주평생교육장학진흥원 ‘제주신화학교: 일반신 본풀이’강좌 개최</a>
+							</div>
+						</li>
+						<li class="desktop-only">
+							<div><span>2020-12</span>14</div>
+							<div>
+								<a href="result-media-view.html" class="hyperlink">제주연구원 제주학연구센터 송년특강 ‘포스트 코로나 시대, 차별과 혐오를 넘어’개최</a>
+							</div>
+						</li>
+						<li class="desktop-only">
+							<div><span>2020-12</span>14</div>
+							<div>
+								<a href="cresult-media-view.html" class="hyperlink">2020 제주학주간 제4회 제주학대회 ‘명사 초청 강연: 제주어를 부탁해!’ 신청 안내</a>
+							</div>
+						</li>
+					</ul><!--//tab-pane-->
+					<ul id="tab-trend" class="tab-pane list-home">
+						<li>
+							<div><span>2020-12</span>14</div>
+							<div>
+								<a href="result-trend-view.html" class="hyperlink">[제주도청-공보] 도 무형문화재 제10호 멸치후리는 노래 전승교육사에 이춘복씨 인정</a>
+							</div>
+						</li>
+						<li>
+							<div><span>2020-12</span>14</div>
+							<div>
+								<a href="result-trend-view.html" class="hyperlink">[제민일보] 제주학연구센터, 2021 연구비 지원 공모</a>
+							</div>
+						</li>
+						<li>
+							<div><span>2020-12</span>14</div>
+							<div>
+								<a href="result-trend-view.html" class="hyperlink">	[뉴제주신문] 제2회 제주학 아카이브 '제주 관혼상제' 사진영상 공개수집</a>
+							</div>
+						</li>
+						<li class="desktop-only">
+							<div><span>2020-12</span>14</div>
+							<div>
+								<a href="result-trend-view.html" class="hyperlink">[제주일보] 김시종 시인 대담집, ‘재일을 산다-어느 시인의 투쟁사’ 번역.출간</a>
+							</div>
+						</li>
+						<li class="desktop-only">
+							<div><span>2020-12</span>14</div>
+							<div>
+								<a href="result-trend-view.html" class="hyperlink">[한라일보] 연구보고서 『성 이시돌 목장 테쉬폰 주택 생활문화 조사』발간</a>
+							</div>
+						</li>
+						<li class="desktop-only">
+							<div><span>2020-12</span>14</div>
+							<div>
+								<a href="result-trend-view.html" class="hyperlink">[보도자료] 제1회 제주학 아카이브 사진․영상 공개 수집 기간 연장</a>
+							</div>
+						</li>
+					</ul><!--//tab-pane-->
+				</div>
+			</div><!--//board-->
+			<ul class="banner">
+				<li>
+					<a href="community-news-view.html">
+						<img src="images/sample/banner-001.png" alt="포스트 코로나 시대, 차별과 혐오를 넘어">
+					</a>
+				</li>
+				<li>
+					<a href="community-news-view.html">
+						<img src="images/sample/banner-002.png" alt="포스트 코로나 시대, 차별과 혐오를 넘어">
+					</a>
+				</li>
+				<li>
+					<a href="community-news-view.html">
+						<img src="images/sample/banner-003.png" alt="포스트 코로나 시대, 차별과 혐오를 넘어">
+					</a>
+				</li>
+			</ul><!--//banner-->
+		</div>
+	</div><!--//section news-->
+	
+	<div class="section photo">
+		<div class="content-wrap">
+			<div class="section-header">
+				<h3>포토갤러리</h3>
+				<a href="community-photo-list.html">더보기</a>
+			</div>
+			<ul class="list-card slick-shadow">
+				<li class="card-image">
+					<a href="community-photo-view.html">
+						<div class="image-container" style="background-image:url(images/sample/photo-001.jpg)"></div>
+						<div class="text">
+							<h6>제주학연구센터 업무협약식</h6>
+							<p>2020-12-20</p>
+						</div>
+					</a>
+				</li>
+				<li class="card-image">
+					<a href="community-photo-view.html">
+						<div class="image-container" style="background-image:url(images/sample/photo-002.jpg)"></div>
+						<div class="text">
+							<h6>제주학연구센터 업무협약식</h6>
+							<p>2020-12-20</p>
+						</div>
+					</a>
+				</li>
+				<li class="card-image">
+					<a href="community-photo-view.html">
+						<div class="image-container" style="background-image:url(images/sample/photo-003.jpg)"></div>
+						<div class="text">
+							<h6>제주학연구센터 - 제주평생교육장학진흥원 간 업무협약식(2021.3.04.)제주학연구센터 - 제주평생교육장학진흥원 간 업무협약식(2021.3.04.)</h6>
+							<p>2020-12-20</p>
+						</div>
+					</a>
+				</li>
+				<li class="card-image fromtablet-only">
+					<a href="community-photo-view.html">
+						<div class="image-container" style="background-image:url(images/sample/photo-001.jpg)"></div>
+						<div class="text">
+							<h6>제주학연구센터 - 제주평생교육장학진흥원 간 업무협약식(2021.3.04.)</h6>
+							<p>2020-12-20</p>
+						</div>
+					</a>
+				</li>
+				<li class="card-image fromtablet-only">
+					<a href="community-photo-view.html">
+						<div class="image-container" style="background-image:url(images/sample/photo-001.jpg)"></div>
+						<div class="text">
+							<h6>제주학연구센터 - 제주평생교육장학진흥원 간 업무협약식(2021.3.04.)</h6>
+							<p>2020-12-20</p>
+						</div>
+					</a>
+				</li>
+				<li class="card-image fromtablet-only">
+					<a href="community-photo-view.html">
+						<div class="image-container" style="background-image:url(images/sample/photo-001.jpg)"></div>
+						<div class="text">
+							<h6>제주학연구센터 - 제주평생교육장학진흥원 간 업무협약식(2021.3.04.)</h6>
+							<p>2020-12-20</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div><!--//section photo-->
+	
+	<div class="section book">
+		<div class="content-wrap">
+			<div class="section-header">
+				<h3>제주학 총서</h3>
+				<a href="result-books.html">더보기</a>
+			</div>
+			<ul class="list-card">
+				<li class="card-image">
+					<a href="result-books.html">
+						<div class="image-container" style="background-image:url(images/sample/book-001.jpg)"></div>
+						<div class="text">
+							<h6>제주 돌문화경관 연구</h6>
+							<p>2020-12-20</p>
+						</div>
+					</a>
+				</li>
+				<li class="card-image">
+					<a href="community-photo-view.html">
+						<div class="image-container" style="background-image:url(images/sample/book-002.jpg)"></div>
+						<div class="text">
+							<h6>제주 표류인 이방익의 길을 따라가다: 중국답사기</h6>
+							<p>2020-12-20</p>
+						</div>
+					</a>
+				</li>
+				<li class="card-image">
+					<a href="community-photo-view.html">
+						<div class="image-container" style="background-image:url(images/sample/book-003.jpg)"></div>
+						<div class="text">
+							<h6>일제강점기 제주 지명 문화 사전</h6>
+							<p>2020-12-20</p>
+						</div>
+					</a>
+				</li>
+				<li class="card-image desktop-only">
+					<a href="community-photo-view.html">
+						<div class="image-container" style="background-image:url(images/sample/book-004.jpg)"></div>
+						<div class="text">
+							<h6>제주역사자료총서2 일제하 신문 제주기사 자료집 - 제주신문 초판</h6>
+							<p>2020-12-20</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div><!--//section book-->
+	
+	
+	<div class="section report-seminar">
+		<div class="content-wrap">
+			<div class="report">
+				<div class="section-header">
+					<h3>연구보고서</h3>
+					<a href="result-report-list.html">더보기</a>
+				</div>
+				<ul class="list-home">
+					<li>
+						<div><span>2020-12</span>14</div>
+						<div>
+							<span>71호</span>
+							<a href="result-report-view.html" class="hyperlink">정조(正祖)의 제주통치론</a>
+						</div>
+					</li>
+					<li>
+						<div><span>2020-12</span>14</div>
+						<div>
+							<span>71호</span>
+							<a href="result-report-view.html" class="hyperlink">이어도 설화 스토리텔링 방안 연구 - 장소성을 중심으로</a>
+						</div>
+					</li>
+					<li>
+						<div><span>2020-12</span>14</div>
+						<div>
+							<span>71호</span>
+							<a href="result-report-view.html" class="hyperlink">제주신화의 현대적 활용 가능성 연구 - 그리스신화의 경우와 비교하여</a>
+						</div>
+					</li>
+				</ul>
+			</div><!--//report-->
+			<div class="seminar">
+				<div class="section-header">
+					<h3>세미나 자료</h3>
+					<a href="result-seminar-list.html">더보기</a>
+				</div>
+				<ul class="list-home">
+					<li>
+						<div><span>2020-12</span>14</div>
+						<div>
+							<span>원내주회</span>
+							<a href="result-seminar-view.html" class="hyperlink">2020 탐라신화의 동아시아적 위상과 과제</a>
+						</div>
+					</li>
+					<li>
+						<div><span>2020-12</span>14</div>
+						<div>
+							<span>원내주회</span>
+							<a href="result-seminar-view.html" class="hyperlink">제4회 제주학대회: 근대성과 제주정체성</a>
+						</div>
+					</li>
+					<li>
+						<div><span>2020-12</span>14</div>
+						<div>
+							<span>원내주회</span>
+							<a href="result-seminar-view.html" class="hyperlink">2020년 제17회 한국방언학회 전국학술대회 언어 및 방언 접촉</a>
+						</div>
+					</li>
+				</ul>
+			</div><!--//report-->
+		</div><!--//content-wrap-->
+	</div><!--//section report,seminar-->
+	
+	<div class="section archive">
+		<div class="content-wrap">
+			<div class="section-header">
+				<span>Archive</span>
+				<h3>아카이브</h3>
+			</div>
+			<form class="form-search">
+				<a href="archive-list.html" class="btn tooltip-top" title="제주학 아카이브 바로가기">inventory_2</a>
+				<div>
+					<input type="search" placeholder="제주학 아카이브 검색" title="제주학 아카이브 검색">
+					<button type="submit" class="ico-search-white btn">검색</button>
+				</div>
+				<a data-toggle="modal" href="modal-archive-search.html" data-target="#modal" class="btn"><span>filter_alt</span><span>상세검색</span></a>
+			</form><!--//form-search-->
+			<ul class="list-card masonry">
+				<li class="card-bgimg">
+					<a href="archive-view.html">
+						<img src="images/sample/archive-001.jpg" alt="">
+						<div class="text">
+							<h6>눈곽</h6>
+							<p>물안경을 보관하던 나무상자. 양옆에 홈을 파 뚜껑을 미닫이로 만듦. 상자가 떨어지거나 충격을 받았을 때 눈이 안전하기 위해서다.</p>
+						</div>
+					</a>
+				</li>
+				<li class="card-bgimg">
+					<a href="archive-view.html">
+						<img src="images/sample/archive-002.jpg" alt="">
+						<div class="text">
+							<h6>눈곽</h6>
+							<p>물안경을 보관하던 나무상자. 양옆에 홈을 파 뚜껑을 미닫이로 만듦. 상자가 떨어지거나 충격을 받았을 때 눈이 안전하기 위해서다.</p>
+						</div>
+					</a>
+				</li>
+				<li class="card-bgimg">
+					<a href="archive-view.html">
+						<img src="images/sample/archive-003.jpg" alt="">
+						<div class="text">
+							<h6>눈곽</h6>
+							<p>물안경을 보관하던 나무상자. 양옆에 홈을 파 뚜껑을 미닫이로 만듦. 상자가 떨어지거나 충격을 받았을 때 눈이 안전하기 위해서다.</p>
+						</div>
+					</a>
+				</li>
+				<li class="card-bgimg">
+					<a href="archive-view.html">
+						<img src="images/sample/archive-004.jpg" alt="">
+						<div class="text">
+							<h6>눈곽</h6>
+							<p>물안경을 보관하던 나무상자. 양옆에 홈을 파 뚜껑을 미닫이로 만듦. 상자가 떨어지거나 충격을 받았을 때 눈이 안전하기 위해서다.</p>
+						</div>
+					</a>
+				</li>
+				<li class="card-bgimg">
+					<a href="archive-view.html">
+						<img src="images/sample/archive-005.jpg" alt="">
+						<div class="text">
+							<h6>눈곽</h6>
+							<p>물안경을 보관하던 나무상자. 양옆에 홈을 파 뚜껑을 미닫이로 만듦. 상자가 떨어지거나 충격을 받았을 때 눈이 안전하기 위해서다.</p>
+						</div>
+					</a>
+				</li>
+				<li class="card-bgimg">
+					<a href="archive-view.html">
+						<img src="images/sample/archive-006.jpg" alt="">
+						<div class="text">
+							<h6>눈곽</h6>
+							<p>물안경을 보관하던 나무상자. 양옆에 홈을 파 뚜껑을 미닫이로 만듦. 상자가 떨어지거나 충격을 받았을 때 눈이 안전하기 위해서다.</p>
+						</div>
+					</a>
+				</li>
+				<li class="card-bgimg">
+					<a href="archive-view.html">
+						<img src="images/sample/archive-007.jpg" alt="">
+						<div class="text">
+							<h6>눈곽</h6>
+							<p>물안경을 보관하던 나무상자. 양옆에 홈을 파 뚜껑을 미닫이로 만듦. 상자가 떨어지거나 충격을 받았을 때 눈이 안전하기 위해서다.</p>
+						</div>
+					</a>
+				</li>
+				<li class="card-bgimg">
+					<a href="archive-view.html">
+						<img src="images/sample/archive-008.jpg" alt="">
+						<div class="text">
+							<h6>눈곽</h6>
+							<p>물안경을 보관하던 나무상자. 양옆에 홈을 파 뚜껑을 미닫이로 만듦. 상자가 떨어지거나 충격을 받았을 때 눈이 안전하기 위해서다.</p>
+						</div>
+					</a>
+				</li>
+				<li class="card-bgimg">
+					<a href="archive-view.html">
+						<img src="images/sample/archive-009.jpg" alt="">
+						<div class="text">
+							<h6>눈곽</h6>
+							<p>물안경을 보관하던 나무상자. 양옆에 홈을 파 뚜껑을 미닫이로 만듦. 상자가 떨어지거나 충격을 받았을 때 눈이 안전하기 위해서다.</p>
+						</div>
+					</a>
+				</li>
+				<li class="card-bgimg">
+					<a href="archive-view.html">
+						<img src="images/sample/archive-010.jpg" alt="">
+						<div class="text">
+							<h6>눈곽</h6>
+							<p>물안경을 보관하던 나무상자. 양옆에 홈을 파 뚜껑을 미닫이로 만듦. 상자가 떨어지거나 충격을 받았을 때 눈이 안전하기 위해서다.</p>
+						</div>
+					</a>
+				</li>
+				<li class="card-bgimg">
+					<a href="archive-view.html">
+						<img src="images/sample/archive-011.jpg" alt="">
+						<div class="text">
+							<h6>눈곽</h6>
+							<p>물안경을 보관하던 나무상자. 양옆에 홈을 파 뚜껑을 미닫이로 만듦. 상자가 떨어지거나 충격을 받았을 때 눈이 안전하기 위해서다.</p>
+						</div>
+					</a>
+				</li>
+				<li class="card-bgimg">
+					<a href="archive-view.html">
+						<img src="images/sample/archive-012.jpg" alt="">
+						<div class="text">
+							<h6>눈곽</h6>
+							<p>물안경을 보관하던 나무상자. 양옆에 홈을 파 뚜껑을 미닫이로 만듦. 상자가 떨어지거나 충격을 받았을 때 눈이 안전하기 위해서다.</p>
+						</div>
+					</a>
+				</li>
+				<li class="card-bgimg">
+					<a href="archive-view.html">
+						<img src="images/sample/archive-013.jpg" alt="">
+						<div class="text">
+							<h6>눈곽</h6>
+							<p>물안경을 보관하던 나무상자. 양옆에 홈을 파 뚜껑을 미닫이로 만듦. 상자가 떨어지거나 충격을 받았을 때 눈이 안전하기 위해서다.</p>
+						</div>
+					</a>
+				</li>
+				<li class="card-bgimg">
+					<a href="archive-view.html">
+						<img src="images/sample/archive-014.jpg" alt="">
+						<div class="text">
+							<h6>눈곽</h6>
+							<p>물안경을 보관하던 나무상자. 양옆에 홈을 파 뚜껑을 미닫이로 만듦. 상자가 떨어지거나 충격을 받았을 때 눈이 안전하기 위해서다.</p>
+						</div>
+					</a>
+				</li>
+				<li class="card-bgimg">
+					<a href="archive-view.html">
+						<img src="images/sample/archive-015.jpg" alt="">
+						<div class="text">
+							<h6>눈곽</h6>
+							<p>물안경을 보관하던 나무상자. 양옆에 홈을 파 뚜껑을 미닫이로 만듦. 상자가 떨어지거나 충격을 받았을 때 눈이 안전하기 위해서다.</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<a href="archive-list.html" class="btn-more">더보기<span>add</span></a>
+		</div>
+	</div><!--//section archive-->
+	
+</div><!--//container-->
+
+<footer class="global-footer"></footer>
+
+<!--Modal-->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-archive-search" role="document">
+        <div class="modal-content"></div>
+    </div>
+</div><!--//modal-->
+
+</body>
+</html>

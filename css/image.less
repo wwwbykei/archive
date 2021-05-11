@@ -1,0 +1,122 @@
+
+// Image, Icon, Video
+img,video{max-width:100%;height:auto}
+
+.image-container,.video-container{.overh;.rel;.radius(8px);.bgs(cover);.bgpos(50%,50%);
+	@media @fromtablet{.radius(12px)}
+}
+.video-container{
+	&:before{content:'play_arrow';.center-abs(32px,32px);.material-icons-outlined;.fs(32);.c(#fff);
+		@media @desktop{.center-abs(52px,52px);.fs(52)}
+	}
+}
+.pdf-container{width: 100%;
+    height: 900px;
+    object-fit: cover;}
+.page-archive{
+	.page-title{
+		&:after{.bgimg('bg-archive.jpg');
+			@media @desktop{.bgimg('bg-archive-desktop.jpg')}
+		}
+	}
+}
+.page-about{
+	.page-title{
+		&:after{.bgimg('bg-about.jpg');
+			@media @desktop{.bgimg('bg-about-desktop.jpg')}
+		}
+	}
+}
+.page-business{
+	.page-title{
+		&:after{.bgimg('bg-business.jpg');
+			@media @desktop{.bgimg('bg-business-desktop.jpg')}
+		}
+	}
+}
+.page-community{
+	.page-title{
+		&:after{.bgimg('bg-community.jpg');
+			@media @desktop{.bgimg('bg-community-desktop.jpg')}
+		}
+	}
+}
+.page-result{
+	.page-title{
+		&:after{.bgimg('bg-result.jpg');
+			@media @desktop{.bgimg('bg-result-desktop.jpg')}
+		}
+	}
+}
+.page-information{
+	.page-title{
+		&:after{.bgimg('bg-information.jpg')}
+	}
+}
+
+
+// .ico-add{.bgimg('ico-add.png');
+// 	&:hover{.bgimg('ico-add-blue.png')}
+// }
+// .ico-education{.bgimg('ico-education-white.png')}
+// .ico-arrow-down{.bgimg('ico-arrow-down.png');
+// 	&:hover{.bgimg('ico-arrow-down-blue.png')}
+// }
+// .ico-arrow-left{.bgimg('ico-arrow-left.png');
+// 	&:hover{.bgimg('ico-arrow-left-blue.png')}
+// }
+// .ico-arrow-right{.bgimg('ico-arrow-right.png');
+// 	&:hover{.bgimg('ico-arrow-right-blue.png')}
+// }
+// .ico-arrow-up{.bgimg('ico-arrow-up.png');
+// 	&:hover{.bgimg('ico-arrow-up-blue.png')}
+// }
+// .ico-calendar{.bgimg('ico-calendar.png');
+// 	&:hover{.bgimg('ico-arrow-calendar-blue.png')}
+// }
+// .ico-chart-bar{.bgimg('ico-chart-bar.png')}
+// .ico-chart-line-multi{.bgimg('ico-chart-line-multi.png')}
+// .ico-chart-line{.bgimg('ico-chart-line.png')}
+// .ico-chart-map{.bgimg('ico-chart-map.png')}
+// .ico-chart-pie{.bgimg('ico-chart-pie.png')}
+// .ico-chart-tagcloud{.bgimg('ico-chart-tagcloud.png')}
+// .ico-close{.bgimg('ico-close.png');
+// 	&:hover{.bgimg('ico-close-blue.png')}
+// }
+// .ico-dotdotdot-white{.bgimg('ico-dotdotdot-white.png')}
+// .ico-economy{.bgimg('ico-economy-white.png')}
+// .ico-environment{.bgimg('ico-environment-white.png')}
+// .ico-farm{.bgimg('ico-farm-white.png')}
+// .ico-population{.bgimg('ico-population-white.png')}
+// .ico-health{.bgimg('ico-health-white.png')}
+// .ico-help{.bgimg('ico-help.png');
+// 	&:hover{.bgimg('ico-help-blue.png')}
+// }
+// .ico-lock{.bgimg('ico-lock.png')}
+// .ico-tour{.bgimg('ico-tour-white.png')}
+// .ico-person{.bgimg('ico-person-lightblue.png')}
+// .ico-play{.bgimg('ico-play-outline-white.png')}
+// //.ico-search{.bgimg('ico-search.png')}
+// .ico-share{.bgimg('ico-share.png');
+// 	&:hover{.bgimg('ico-share-blue.png')}
+// }
+// .ico-star{.bgimg('ico-star.png')}
+// .ico-star-white{.bgimg('ico-star-white.png')}
+// .ico-tethering-white{.bgimg('ico-tethering-white.png')}
+// .ico-traffic{.bgimg('ico-traffic-white.png')}
+// .btn-icon{
+// 	&.ico-star{
+// 		&:hover{.bgimg('ico-star-blue-outline.png')}
+// 		&:focus{.bgimg('ico-star-blue-fill.png')}
+// 		&:focus:not{.bgimg('ico-star.png')}
+// 	}
+// }
+
+// .section-image{.fl;.w-full;.bg(#000);.tc}
+// .section-video{.fl;.w-full;.mt(20px);
+// 	@media @fromtablet{.mt(40px)}
+// }
+// .image-container{}
+// .video-container{.boxsize;.overh;.rel;.h(0);.pb(56.25%);.b;
+// 	iframe,object,embed{.abs;top:0;left:0;.w-full;.h(100%)}
+// }
