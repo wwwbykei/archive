@@ -13,7 +13,7 @@
 <meta name="application-name" content="제주학 연구센터">
 <meta name="msapplication-TileColor" content="#bga495">
 <meta name="theme-color" content="#ffffff">
-<title>제주학총서 &#58; 제주학 연구센터</title>
+<title>발간자료 &#58; 제주학 연구센터</title><!--20210615.타이틀변경-->
 <link rel="stylesheet" href="css/style.css">
 <!--[if lt IE 9]>
 <script src="js/respond.min.js"></script>
@@ -24,6 +24,7 @@
 <script src="js/style.js"></script>
 <script src="js/collapse.js"></script>
 <script src="js/dropdown.js"></script>
+<script src="js/tab.js"></script><!--20210615.추가-->
 </head>
 
 <body class="page-result">
@@ -34,8 +35,10 @@
 
 <div id="container">
 	<ul class="nav-direct-links">
-		<li><a href="about-greetings.html"><i class="material-icons">business</i>센터소개</a></li>
-		<li><a href="archive-list.html"><i class="material-icons-outlined">inventory_2</i>아카이브</a></li>
+		<li class="desktop-only"><a href="about-greetings.html"><i class="material-icons">business</i><span>센터소개</span></a></li>
+		<li class="desktop-only"><a href="archive-list.html"><i class="material-icons-outlined">inventory_2</i><span>아카이브</span></a></li>
+		<li class="desktop-only"><a href=""><i class="material-icons">import_contacts</i><span>제주어사전 다운로드</span></a></li>
+		<li><a href=""><i class="material-icons-outlined">call</i><span>제주어 종합상담실<br>1811-0515</span></a></li>
 	</ul>
 	<div class="page-title">
 		<h1>연구성과</h1>
@@ -53,12 +56,13 @@
 			        <li><a href="community-news-list.html">열린마당</a></li>
 			        <li><a href="information-administration-list.html">정보공개</a></li>
 			        <li><a href="about-greetings.html">센터소개</a></li>
+			        <li><a href="site-privacy.html">사이트 도우미</a></li>
 				</ul>
 			</li>
 			<li class="dropdown">
-				<button type="button" id="breadcrumb-sub" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">제주학총서</button>
+				<button type="button" id="breadcrumb-sub" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">발간자료</button><!--20210615.텍스트변경-->
 				<ul class="dropdown-menu" aria-labelledby="2차 메뉴">
-					<li><a href="result-books.html">제주학총서</a></li>
+					<li><a href="result-books.html">발간자료</a></li><!--20210615.텍스트변경-->
 	                <li><a href="result-report-list.html">연구보고서</a></li>
 	                <li><a href="result-seminar-list.html">세미나자료</a></li>
 	                <li><a href="result-media-list.html">언론보도</a></li>
@@ -68,92 +72,121 @@
 		</ul>
 	</nav><!--//breadcrumb-->
 	<div class="page-contents">
-		<div class="contents-header">
-			<h1 class="header-title">제주학총서</h1>
-			<form class="search-group">
-				<input type="search" placeholder="검색어 입력" title="검색어 입력" class="input-underline">
-				<button type="submit" class="ico-search btn">검색</button>
-			</form><!--//form-search-->
-		</div>
-		<p class="list-caption">총 <span>430</span>개의 내용이 있습니다.</p>
-		<div class="list-board board-books">
-			<ul class="list-card card-column-2">
-				<li class="card-book">
-					<div class="image-container" style="background-image:url(images/sample/book-001.jpg)"></div>
-					<div class="text">
-						<span>제49호</span>
-						<h6>이야기하기로 본 제주의 원풍경·아이덴티티</h6>
-						<p>
-							<span>고동호 &middot; 송상조</span>
-							<span>2020-01-20</span>
-						</p>
-						<button type="button" data-toggle="collapse" href="#item-60" class="btn-collapse collapsed btn">첨부파일 (2)</button>
-						<ul id="item-60" class="collapse">
-							<li><a href="">제주학총서45_제주 인권 활동가 이야기 사람과사람 웹용.pdf</a></li>
-							<li><a href="">프란게문고 웹게시용 PDF.pdf</a></li>
-						</ul>
-					</div>
-				</li><!--//card-book-->
-				<li class="card-book">
-					<div class="image-container" style="background-image:url(images/sample/book-002.jpg)"></div>
-					<div class="text">
-						<span>제48호</span>
-						<h6>이야기하기로 본 제주의 원풍경·아이덴티티이야기하기로 본 제주의 원풍경·아이덴티티이야기하기로 본 제주의 원풍경·아이덴티티</h6>
-						<p>
-							<span>고동호 &middot; 송상조호 &middot; 오창명호 &middot; 문순덕호 &middot; 오승훈</span>
-							<span>2020-01-20</span>
-						</p>
-					</div>
-				</li><!--//card-book-->
-				<li class="card-book">
-					<div class="image-container" style="background-image:url(images/sample/book-003.jpg)"></div>
-					<div class="text">
-						<span>제47호</span>
-						<h6>이야기하기로 본 제주의 원풍경·아이덴티티</h6>
-						<p>
-							<span>고동호 &middot; 송상조</span>
-							<span>2020-01-20</span>
-						</p>
-						<button type="button" data-toggle="collapse" href="#item-58" class="btn-collapse collapsed btn">첨부파일 (1)</button>
-						<ul id="item-58" class="collapse">
-							<li><a href="">제주학총서45_제주 인권 활동가 이야기 사람과사람 웹용.pdf</a></li>
-						</ul>
-					</div>
-				</li><!--//card-book-->
-				<li class="card-book">
-					<div class="image-container" style="background-image:url(images/sample/book-004.jpg)"></div>
-					<div class="text">
-						<span>제46호</span>
-						<h6>이야기하기로 본 제주의 원풍경·아이덴티티</h6>
-						<p>
-							<span>고동호 &middot; 송상조</span>
-							<span>2020-01-20</span>
-						</p>
-						<button type="button" data-toggle="collapse" href="#item-57" class="btn-collapse collapsed btn">첨부파일 (1)</button>
-						<ul id="item-57" class="collapse">
-							<li><a href="">제주학총서45_제주 인권 활동가 이야기 사람과사람 웹용.pdf</a></li>
-						</ul>
-					</div>
-				</li><!--//card-book-->
-			</ul><!--//list-card-->
-		</div><!--//list-board-->
-		
-		<div class="pagination">
-			<a href="" class="prev">chevron_left</a>
-			<ul>
-				<li class="active"><a href="">1</a></li>
-				<li><a href="">2</a></li>
-				<li><a href="">3</a></li>
-				<li><a href="">4</a></li>
-				<li><a href="">5</a></li>
-				<li><a href="">6</a></li>
-				<li><a href="">7</a></li>
-				<li><a href="">8</a></li>
-				<li><a href="">9</a></li>
-				<li><a href="">10</a></li>
+	
+	
+	
+		<!--20210615.탭추가 시작-->
+		<div class="content-wrap">
+			<ul class="nav-tab-square">
+				<li class="active"><a data-toggle="tab" href="#tab-book" class="btn">제주학총서</a></li>
+				<li><a data-toggle="tab" href="#tab-history" class="btn">제주역사자료학총서</a></li>
 			</ul>
-			<a href="" class="next">chevron_right</a>
-		</div><!--//pagination-->
+		</div>
+		<div class="tab-content">
+			<div id="tab-book" class="tab-pane active">
+				
+				<!--20210615.제주학총서 시작-->
+				<div class="content-wrap">
+					<form class="search-group">
+						<input type="search" placeholder="검색어 입력" title="검색어 입력" class="input-underline">
+						<button type="submit" class="ico-search btn">검색</button>
+					</form><!--//form-search-->
+				</div>
+				<p class="list-caption">총 <span>430</span>개의 내용이 있습니다.</p>
+				<div class="list-board board-books">
+					<ul class="list-card card-column-2">
+						<li class="card-book">
+							<div class="image-container" style="background-image:url(images/sample/book-001.jpg)"></div>
+							<div class="text">
+								<span>제49호</span>
+								<h6>이야기하기로 본 제주의 원풍경·아이덴티티</h6>
+								<p>
+									<span>고동호 &middot; 송상조</span>
+									<span>2020-01-20</span>
+								</p>
+								<button type="button" data-toggle="collapse" href="#item-60" class="btn-collapse collapsed btn">첨부파일 (2)</button>
+								<ul id="item-60" class="collapse">
+									<li><a href="">제주학총서45_제주 인권 활동가 이야기 사람과사람 웹용.pdf</a></li>
+									<li><a href="">프란게문고 웹게시용 PDF.pdf</a></li>
+								</ul>
+							</div>
+						</li><!--//card-book-->
+						<li class="card-book">
+							<div class="image-container" style="background-image:url(images/sample/book-002.jpg)"></div>
+							<div class="text">
+								<span>제48호</span>
+								<h6>이야기하기로 본 제주의 원풍경·아이덴티티이야기하기로 본 제주의 원풍경·아이덴티티이야기하기로 본 제주의 원풍경·아이덴티티</h6>
+								<p>
+									<span>고동호 &middot; 송상조호 &middot; 오창명호 &middot; 문순덕호 &middot; 오승훈</span>
+									<span>2020-01-20</span>
+								</p>
+							</div>
+						</li><!--//card-book-->
+						<li class="card-book">
+							<div class="image-container" style="background-image:url(images/sample/book-003.jpg)"></div>
+							<div class="text">
+								<span>제47호</span>
+								<h6>이야기하기로 본 제주의 원풍경·아이덴티티</h6>
+								<p>
+									<span>고동호 &middot; 송상조</span>
+									<span>2020-01-20</span>
+								</p>
+								<button type="button" data-toggle="collapse" href="#item-58" class="btn-collapse collapsed btn">첨부파일 (1)</button>
+								<ul id="item-58" class="collapse">
+									<li><a href="">제주학총서45_제주 인권 활동가 이야기 사람과사람 웹용.pdf</a></li>
+								</ul>
+							</div>
+						</li><!--//card-book-->
+						<li class="card-book">
+							<div class="image-container" style="background-image:url(images/sample/book-004.jpg)"></div>
+							<div class="text">
+								<span>제46호</span>
+								<h6>이야기하기로 본 제주의 원풍경·아이덴티티</h6>
+								<p>
+									<span>고동호 &middot; 송상조</span>
+									<span>2020-01-20</span>
+								</p>
+								<button type="button" data-toggle="collapse" href="#item-57" class="btn-collapse collapsed btn">첨부파일 (1)</button>
+								<ul id="item-57" class="collapse">
+									<li><a href="">제주학총서45_제주 인권 활동가 이야기 사람과사람 웹용.pdf</a></li>
+								</ul>
+							</div>
+						</li><!--//card-book-->
+					</ul><!--//list-card-->
+				</div><!--//list-board-->
+				<div class="pagination">
+					<div>
+						<a href="" class="first">first_page</a>
+						<a href="" class="prev">chevron_left</a>
+					</div>
+					<ul>
+						<li class="active"><a href="">1</a></li>
+						<li><a href="">2</a></li>
+						<li><a href="">3</a></li>
+						<li><a href="">4</a></li>
+						<li><a href="">5</a></li>
+						<li><a href="">6</a></li>
+						<li><a href="">7</a></li>
+						<li><a href="">8</a></li>
+						<li><a href="">9</a></li>
+						<li><a href="">10</a></li>
+					</ul>
+					<div>
+						<a href="" class="next">chevron_right</a>
+						<a href="" class="last">last_page</a>
+					</div>
+				</div><!--//pagination-->
+				<!--//20210615.제주학총서 끝-->
+				
+				
+			</div><!--//tab-pane-->
+			<div id="tab-history" class="tab-pane">
+				제주역사자료학총서
+			</div><!--//tab-pane-->
+		</div><!--//tab-content-->
+		<!--//20210615.탭추가 끝-->
+		
+		
 	</div><!--//page-contents-->
 </div><!--//container-->
 

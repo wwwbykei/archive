@@ -33,8 +33,10 @@
 
 <div id="container">
 	<ul class="nav-direct-links">
-		<li><a href="about-greetings.html"><i class="material-icons">business</i>센터소개</a></li>
-		<li><a href="archive-list.html"><i class="material-icons-outlined">inventory_2</i>아카이브</a></li>
+		<li class="desktop-only"><a href="about-greetings.html"><i class="material-icons">business</i><span>센터소개</span></a></li>
+		<li class="desktop-only"><a href="archive-list.html"><i class="material-icons-outlined">inventory_2</i><span>아카이브</span></a></li>
+		<li class="desktop-only"><a href=""><i class="material-icons">import_contacts</i><span>제주어사전 다운로드</span></a></li>
+		<li><a href=""><i class="material-icons-outlined">call</i><span>제주어 종합상담실<br>1811-0515</span></a></li>
 	</ul>
 	<div class="page-title">
 		<h1>제주학 아카이브</h1>
@@ -52,6 +54,7 @@
 			        <li><a href="community-news-list.html">열린마당</a></li>
 			        <li><a href="information-administration-list.html">정보공개</a></li>
 			        <li><a href="about-greetings.html">센터소개</a></li>
+			        <li><a href="site-privacy.html">사이트 도우미</a></li>
 				</ul>
 			</li>
 			<li class="dropdown">
@@ -191,9 +194,13 @@
 							<label for="deposit-signup-name" class="form__label">이름 &#47; 단체명</label>
 						</div>
 					</div>
-					<div class="form__group">
-						<input type="text" id="deposit-signup-address" class="form__field" placeholder=" ">
-						<label for="deposit-signup-address" class="form__label">주소</label>
+					<div class="form__group form-address">
+						<label for="deposit-register-address" class="form__label">주소</label>
+						<div>
+							<a href="" class="btn btn-outline">주소검색</a>
+							<input type="text" class="form__field" value="">
+						</div>
+						<input type="text" id="deposit-register-address" class="form__field" placeholder="상세주소">
 					</div>
 					<div class="form__group">
 						<textarea id="deposit-signup-introduce" class="form__field" placeholder="자신 혹은 단체에 대해 간단히 설명해주세요." rows="4"></textarea>

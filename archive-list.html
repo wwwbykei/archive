@@ -24,15 +24,6 @@
 <script src="js/dropdown.js"></script>
 <script src="js/tab.js"></script>
 <script src="js/style.js"></script>
-<script>
-$( document ).ready( function(){
-	$( ".nav-archive .category-main a" ).click( function(){
-        var id = $( this ).attr('href');
-        $( ".nav-archive .category-sub ul.active" ).removeClass( "active" );
-		$( id ).addClass( "active" );
-    });
-})
-</script>
 </head>
 
 <body class="page-archive archive-search">
@@ -43,8 +34,10 @@ $( document ).ready( function(){
 
 <div id="container">
 	<ul class="nav-direct-links">
-		<li><a href="about-greetings.html"><i class="material-icons">business</i>센터소개</a></li>
-		<li><a href="archive-list.html"><i class="material-icons-outlined">inventory_2</i>아카이브</a></li>
+		<li class="desktop-only"><a href="about-greetings.html"><i class="material-icons">business</i><span>센터소개</span></a></li>
+		<li class="desktop-only"><a href="archive-list.html"><i class="material-icons-outlined">inventory_2</i><span>아카이브</span></a></li>
+		<li class="desktop-only"><a href=""><i class="material-icons">import_contacts</i><span>제주어사전 다운로드</span></a></li>
+		<li><a href=""><i class="material-icons-outlined">call</i><span>제주어 종합상담실<br>1811-0515</span></a></li>
 	</ul>
 	<div class="page-title">
 		<h1>제주학 아카이브</h1>
@@ -62,6 +55,7 @@ $( document ).ready( function(){
 			        <li><a href="community-news-list.html">열린마당</a></li>
 			        <li><a href="information-administration-list.html">정보공개</a></li>
 			        <li><a href="about-greetings.html">센터소개</a></li>
+			        <li><a href="site-privacy.html">사이트 도우미</a></li>
 				</ul>
 			</li>
 			<li class="dropdown">
@@ -87,34 +81,34 @@ $( document ).ready( function(){
 					<div class="category-main">
 						<ul>
 							<li class="has-sub active">
-			        			<a href="#field-general"><i>category</i><span>총류</span></a>
+			        			<a data-toggle="tab" href="#field-general"><i>category</i><span>총류</span></a>
 			        		</li>
 			        		<li>
-			        			<a href=""><i>psychology</i><span>철학</span></a>
+			        			<a href="#"><i>psychology</i><span>철학</span></a>
 			        		</li>
 			        		<li class="has-sub">
-			        			<a href="#field-religion"><i class="ico-religion"></i><span>종교</span></a>
+			        			<a data-toggle="tab" href="#field-religion"><i class="ico-religion"></i><span>종교</span></a>
 			        		</li>
 			        		<li class="has-sub">
-			        			<a href=""><i class="ico-social-science"></i><span>사회과학</span></a>
+			        			<a data-toggle="tab" href="#field-social"><i class="ico-social-science"></i><span>사회과학</span></a>
 			        		</li>
 			        		<li class="has-sub">
-			        			<a href=""><i>science</i><span>순수과학</span></a>
+			        			<a data-toggle="tab" href="#field-science"><i>science</i><span>순수과학</span></a>
 			        		</li>
 			        		<li class="has-sub">
-			        			<a href=""><i>precision_manufacturing</i><span>기술과학</span></a>
+			        			<a data-toggle="tab" href="#field-technology"><i>precision_manufacturing</i><span>기술과학</span></a>
 			        		</li>
 			        		<li class="has-sub">
-			        			<a href=""><i>palette</i><span>예술</span></a>
+			        			<a data-toggle="tab" href="#field-art"><i>palette</i><span>예술</span></a>
 			        		</li>
 			        		<li class="has-sub">
-			        			<a href=""><i>translate</i><span>언어</span></a>
+			        			<a data-toggle="tab" href="#field-language"><i>translate</i><span>언어</span></a>
 			        		</li>
 			        		<li class="has-sub">
-			        			<a href=""><i>auto_stories</i><span>문학</span></a>
+			        			<a data-toggle="tab" href="#field-literature"><i>auto_stories</i><span>문학</span></a>
 			        		</li>
 			        		<li>
-			        			<a href=""><i>history</i><span>역사</span></a>
+			        			<a data-toggle="tab" href="#field-history"><i>history</i><span>역사</span></a>
 			        		</li>
 			        	</ul>
 					</div><!--//category-main-->
@@ -132,47 +126,115 @@ $( document ).ready( function(){
 							<li><a href="">불교</a></li>
 							<li><a href="">기타</a></li>
 						</ul>
+						<ul id="field-social">
+							<li><a href="">전체</a></li>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+						</ul>
+						<ul id="field-science">
+							<li><a href="">전체</a></li>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+						</ul>
+						<ul id="field-technology">
+							<li><a href="">전체</a></li>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+						</ul>
+						<ul id="field-art">
+							<li><a href="">전체</a></li>
+							<li><a href=""></a></li>
+							<li><a href=""></a></li>
+							<li><a href=""></a></li>
+						</ul>
+						<ul id="field-language">
+							<li><a href="">전체</a></li>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+						</ul>
+						<ul id="field-literature">
+							<li><a href="">전체</a></li>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+						</ul>
+						<ul id="field-history">
+							<li><a href="">전체</a></li>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+						</ul>
 					</div><!--//category-sub-->
 				</div><!--//tab-pane-->
 				<div id="tab-type" class="tab-pane">
 					<div class="category-main">
 						<ul>
 							<li>
-			        			<a href=""><i>dns</i><span>제주학DB</span></a>
+			        			<a href="#"><i>dns</i><span>제주학DB</span></a>
 			        		</li>
 			        		<li>
-			        			<a href=""><i>translate</i><span>고문헌</span></a>
+			        			<a href="#"><i>translate</i><span>고문헌</span></a>
 			        		</li>
 			        		<li>
-			        			<a href=""><i>public</i><span>해외문헌</span></a>
+			        			<a href="#"><i>public</i><span>해외문헌</span></a>
 			        		</li>
 			        		<li>
-			        			<a href=""><i>map</i><span>고지도</span></a>
-			        		</li>
-			        		<li>
-			        			<a href=""><i>photo</i><span>사진</span></a>
-			        		</li>
-			        		<li class="has-sub active">
-			        			<a href="#type-video"><i>play_circle</i><span>동영상</span></a>
+			        			<a href="#"><i>map</i><span>고지도</span></a>
 			        		</li>
 			        		<li class="has-sub">
-			        			<a href=""><i>mic</i><span>구술</span></a>
+			        			<a data-toggle="tab" href="#type-photo"><i>photo</i><span>사진</span></a>
 			        		</li>
 			        		<li class="has-sub">
-			        			<a href=""><i>article</i><span>신문기사</span></a>
+			        			<a data-toggle="tab" href="#type-video"><i>play_circle</i><span>동영상</span></a>
 			        		</li>
 			        		<li class="has-sub">
-			        			<a href=""><i>history_edu</i><span>제주역사</span></a>
+			        			<a data-toggle="tab" href="#type-voice"><i>mic</i><span>구술</span></a>
+			        		</li>
+			        		<li class="has-sub">
+			        			<a data-toggle="tab" href="#type-newspaper"><i>article</i><span>신문기사</span></a>
+			        		</li>
+			        		<li class="has-sub">
+			        			<a data-toggle="tab" href="#type-history"><i>history_edu</i><span>제주역사</span></a>
 			        		</li>
 			        	</ul>
 					</div><!--//category-main-->
 					<div class="category-sub">
-						<ul id="type-video" class="active">
-							<li class="active"><a href="">전체</a></li>
+						<ul id="type-photo">
+							<li><a href="">전체</a></li>
+							<li><a href="">버섯</a></li>
+							<li><a href="">야생화</a></li>
+							<li><a href="">노루</a></li>
+							<li><a href="">곤충</a></li>
+							<li><a href="">새</a></li>
+						</ul>
+						<ul id="type-video">
+							<li><a href="">전체</a></li>
 							<li><a href="">한라산</a></li>
 							<li><a href="">자연유산</a></li>
 							<li><a href="">제주인</a></li>
 							<li><a href="">해녀</a></li>
+						</ul>
+						<ul id="type-voice">
+							<li><a href="">전체</a></li>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+						</ul>
+						<ul id="type-newspaper">
+							<li><a href="">전체</a></li>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+						</ul>
+						<ul id="type-history">
+							<li><a href="">전체</a></li>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
 						</ul>
 					</div><!--//category-sub-->
 				</div><!--//tab-pane-->
@@ -215,187 +277,190 @@ $( document ).ready( function(){
 				</thead>
 				<tbody>
 					<tr class="has-split">
-						<td class="cell-number">5,456</td>
+						<td class="cell-number nowrap">5,456</td>
 						<td class="cell-category">고문헌</td>
 						<td class="cell-subject">
 							<a href="archive-view.html" class="hyperlink">제주바투리 Vol.2 2020년12월</a>
 						</td>
 						<td class="cell-linebreak">제주대학교 국어문화</td>
 						<td>제주학연구센터</td>
-						<td class="cell-linebreak">1908년(융희2년)</td>
-						<td><label>조회 : </label>4,564</td>
+						<td class="cell-linebreak nowrap">1908년(융희2년)</td>
+						<td class="nowrap"><label>조회 : </label>4,564</td>
 					</tr>
 					<tr class="has-split">
-						<td class="cell-number">5,456</td>
+						<td class="cell-number nowrap">5,456</td>
 						<td class="cell-category">고문헌</td>
 						<td class="cell-subject">
 							<a href="archive-view.html" class="hyperlink">송당리 본향 웃손당 당오름 백주할망당 신과세제- 마을사람들이 꿩메밀칼국수를 그룻에 떠 쟁반에 올리는 모습</a>
 						</td>
 						<td class="cell-linebreak">제주대학교 국어문화</td>
 						<td>제주학연구센터</td>
-						<td class="cell-linebreak">1908년(융희2년)</td>
-						<td><label>조회 : </label>4,564</td>
+						<td class="cell-linebreak nowrap">1908년(융희2년)</td>
+						<td class="nowrap"><label>조회 : </label>4,564</td>
 					</tr>
 					<tr class="has-split">
-						<td class="cell-number">5,456</td>
+						<td class="cell-number nowrap">5,456</td>
 						<td class="cell-category">고문헌</td>
 						<td class="cell-subject">
 							<a href="archive-view.html" class="hyperlink">제주칠머리 영등굿- 마을 사람들이 초감제 중 석살림 제차를 하는 모습</a>
 						</td>
 						<td class="cell-linebreak">제주대학교 국어문화</td>
 						<td>제주학연구센터</td>
-						<td class="cell-linebreak">1908년(융희2년)</td>
-						<td><label>조회 : </label>4,564</td>
+						<td class="cell-linebreak nowrap">1908년(융희2년)</td>
+						<td class="nowrap"><label>조회 : </label>4,564</td>
 					</tr>
 					<tr class="has-split">
-						<td class="cell-number">5,456</td>
+						<td class="cell-number nowrap">5,456</td>
 						<td class="cell-category">고문헌</td>
 						<td class="cell-subject">
 							<a href="archive-view.html" class="hyperlink">제4회 제주학대회 근대성과 제주정체성</a>
 						</td>
 						<td class="cell-linebreak">제주대학교 국어문화</td>
 						<td>제주학연구센터</td>
-						<td class="cell-linebreak">1908년(융희2년)</td>
-						<td><label>조회 : </label>4,564</td>
+						<td class="cell-linebreak nowrap">1908년(융희2년)</td>
+						<td class="nowrap"><label>조회 : </label>4,564</td>
 					</tr>
 					<tr class="has-split">
-						<td class="cell-number">5,456</td>
+						<td class="cell-number nowrap">5,456</td>
 						<td class="cell-category">고문헌</td>
 						<td class="cell-subject">
 							<a href="archive-view.html" class="hyperlink">로컬리티 기록화를 위한 지역학 아카이브 모델 연구-제주학아카이브 현황분석 및 개선방향을 중심으로-</a>
 						</td>
 						<td class="cell-linebreak">제주대학교 국어문화</td>
 						<td>제주학연구센터</td>
-						<td class="cell-linebreak">1908년(융희2년)</td>
-						<td><label>조회 : </label>4,564</td>
+						<td class="cell-linebreak nowrap">1908년(융희2년)</td>
+						<td class="nowrap"><label>조회 : </label>4,564</td>
 					</tr>
 					<tr class="has-split">
-						<td class="cell-number">5,456</td>
+						<td class="cell-number nowrap">5,456</td>
 						<td class="cell-category">고문헌</td>
 						<td class="cell-subject">
 							<a href="archive-view.html" class="hyperlink">송당리 본향 웃손당 당오름 백주할망당 신과세제- 마을사람들이 꿩메밀칼국수를 그룻에 떠 쟁반에 올리는 모습</a>
 						</td>
 						<td class="cell-linebreak">제주대학교 국어문화</td>
 						<td>제주학연구센터</td>
-						<td class="cell-linebreak">1908년(융희2년)</td>
-						<td><label>조회 : </label>4,564</td>
+						<td class="cell-linebreak nowrap">1908년(융희2년)</td>
+						<td class="nowrap"><label>조회 : </label>4,564</td>
 					</tr>
 					<tr class="has-split">
-						<td class="cell-number">5,456</td>
+						<td class="cell-number nowrap">5,456</td>
 						<td class="cell-category">고문헌</td>
 						<td class="cell-subject">
 							<a href="archive-view.html" class="hyperlink">제주바투리 Vol.2 2020년12월</a>
 						</td>
 						<td class="cell-linebreak">제주대학교 국어문화</td>
 						<td>제주학연구센터</td>
-						<td class="cell-linebreak">1908년(융희2년)</td>
-						<td><label>조회 : </label>4,564</td>
+						<td class="cell-linebreak nowrap">1908년(융희2년)</td>
+						<td class="nowrap"><label>조회 : </label>4,564</td>
 					</tr>
 					<tr class="has-split">
-						<td class="cell-number">5,456</td>
+						<td class="cell-number nowrap">5,456</td>
 						<td class="cell-category">고문헌</td>
 						<td class="cell-subject">
 							<a href="archive-view.html" class="hyperlink">송당리 본향 웃손당 당오름 백주할망당 신과세제- 마을사람들이 꿩메밀칼국수를 그룻에 떠 쟁반에 올리는 모습</a>
 						</td>
 						<td class="cell-linebreak">제주대학교 국어문화</td>
 						<td>제주학연구센터</td>
-						<td class="cell-linebreak">1908년(융희2년)</td>
-						<td><label>조회 : </label>4,564</td>
+						<td class="cell-linebreak nowrap">1908년(융희2년)</td>
+						<td class="nowrap"><label>조회 : </label>4,564</td>
 					</tr>
 					<tr class="has-split">
-						<td class="cell-number">5,456</td>
+						<td class="cell-number nowrap">5,456</td>
 						<td class="cell-category">고문헌</td>
 						<td class="cell-subject">
 							<a href="archive-view.html" class="hyperlink">제주바투리 Vol.2 2020년12월</a>
 						</td>
 						<td class="cell-linebreak">제주대학교 국어문화</td>
 						<td>제주학연구센터</td>
-						<td class="cell-linebreak">1908년(융희2년)</td>
-						<td><label>조회 : </label>4,564</td>
+						<td class="cell-linebreak nowrap">1908년(융희2년)</td>
+						<td class="nowrap"><label>조회 : </label>4,564</td>
 					</tr>
 					<tr class="has-split">
-						<td class="cell-number">5,456</td>
+						<td class="cell-number nowrap">5,456</td>
 						<td class="cell-category">고문헌</td>
 						<td class="cell-subject">
 							<a href="archive-view.html" class="hyperlink">송당리 본향 웃손당 당오름 백주할망당 신과세제- 마을사람들이 꿩메밀칼국수를 그룻에 떠 쟁반에 올리는 모습</a>
 						</td>
 						<td class="cell-linebreak">제주대학교 국어문화</td>
 						<td>제주학연구센터</td>
-						<td class="cell-linebreak">1908년(융희2년)</td>
-						<td><label>조회 : </label>4,564</td>
+						<td class="cell-linebreak nowrap">1908년(융희2년)</td>
+						<td class="nowrap"><label>조회 : </label>4,564</td>
 					</tr>
 					<tr class="has-split">
-						<td class="cell-number">5,456</td>
+						<td class="cell-number nowrap">5,456</td>
 						<td class="cell-category">고문헌</td>
 						<td class="cell-subject">
 							<a href="archive-view.html" class="hyperlink">제주바투리 Vol.2 2020년12월</a>
 						</td>
 						<td class="cell-linebreak">제주대학교 국어문화</td>
 						<td>제주학연구센터</td>
-						<td class="cell-linebreak">1908년(융희2년)</td>
-						<td><label>조회 : </label>4,564</td>
+						<td class="cell-linebreak nowrap">1908년(융희2년)</td>
+						<td class="nowrap"><label>조회 : </label>4,564</td>
 					</tr>
 					<tr class="has-split">
-						<td class="cell-number">5,456</td>
+						<td class="cell-number nowrap">5,456</td>
 						<td class="cell-category">고문헌</td>
 						<td class="cell-subject">
 							<a href="archive-view.html" class="hyperlink">송당리 본향 웃손당 당오름 백주할망당 신과세제- 마을사람들이 꿩메밀칼국수를 그룻에 떠 쟁반에 올리는 모습</a>
 						</td>
 						<td class="cell-linebreak">제주대학교 국어문화</td>
 						<td>제주학연구센터</td>
-						<td class="cell-linebreak">1908년(융희2년)</td>
-						<td><label>조회 : </label>4,564</td>
+						<td class="cell-linebreak nowrap">1908년(융희2년)</td>
+						<td class="nowrap"><label>조회 : </label>4,564</td>
 					</tr>
 					<tr class="has-split">
-						<td class="cell-number">5,456</td>
+						<td class="cell-number nowrap">5,456</td>
 						<td class="cell-category">고문헌</td>
 						<td class="cell-subject">
 							<a href="archive-view.html" class="hyperlink">제주바투리 Vol.2 2020년12월</a>
 						</td>
 						<td class="cell-linebreak">제주대학교 국어문화</td>
 						<td>제주학연구센터</td>
-						<td class="cell-linebreak">1908년(융희2년)</td>
-						<td><label>조회 : </label>4,564</td>
+						<td class="cell-linebreak nowrap">1908년(융희2년)</td>
+						<td class="nowrap"><label>조회 : </label>4,564</td>
 					</tr>
 					<tr class="has-split">
-						<td class="cell-number">5,456</td>
+						<td class="cell-number nowrap">5,456</td>
 						<td class="cell-category">고문헌</td>
 						<td class="cell-subject">
 							<a href="archive-view.html" class="hyperlink">송당리 본향 웃손당 당오름 백주할망당 신과세제- 마을사람들이 꿩메밀칼국수를 그룻에 떠 쟁반에 올리는 모습</a>
 						</td>
 						<td class="cell-linebreak">제주대학교 국어문화</td>
 						<td>제주학연구센터</td>
-						<td class="cell-linebreak">1908년(융희2년)</td>
-						<td><label>조회 : </label>4,564</td>
+						<td class="cell-linebreak nowrap">1908년(융희2년)</td>
+						<td class="nowrap"><label>조회 : </label>4,564</td>
 					</tr>
 					<tr class="has-split">
-						<td class="cell-number">5,456</td>
+						<td class="cell-number nowrap">5,456</td>
 						<td class="cell-category">고문헌</td>
 						<td class="cell-subject">
 							<a href="archive-view.html" class="hyperlink">제주바투리 Vol.2 2020년12월</a>
 						</td>
 						<td class="cell-linebreak">제주대학교 국어문화</td>
 						<td>제주학연구센터</td>
-						<td class="cell-linebreak">1908년(융희2년)</td>
-						<td><label>조회 : </label>4,564</td>
+						<td class="cell-linebreak nowrap">1908년(융희2년)</td>
+						<td class="nowrap"><label>조회 : </label>4,564</td>
 					</tr>
 					<tr class="has-split">
-						<td class="cell-number">5,456</td>
+						<td class="cell-number nowrap">5,456</td>
 						<td class="cell-category">고문헌</td>
 						<td class="cell-subject">
 							<a href="archive-view.html" class="hyperlink">송당리 본향 웃손당 당오름 백주할망당 신과세제- 마을사람들이 꿩메밀칼국수를 그룻에 떠 쟁반에 올리는 모습</a>
 						</td>
 						<td class="cell-linebreak">제주대학교 국어문화</td>
 						<td>제주학연구센터</td>
-						<td class="cell-linebreak">1908년(융희2년)</td>
-						<td><label>조회 : </label>4,564</td>
+						<td class="cell-linebreak nowrap">1908년(융희2년)</td>
+						<td class="nowrap"><label>조회 : </label>4,564</td>
 					</tr>
 				</tbody>
 			</table>
 		</div><!--//list-board-->
 		
 		<div class="pagination">
-			<a href="" class="prev">chevron_left</a>
+			<div>
+				<a href="" class="first">first_page</a>
+				<a href="" class="prev">chevron_left</a>
+			</div>
 			<ul>
 				<li class="active"><a href="">1</a></li>
 				<li><a href="">2</a></li>
@@ -408,7 +473,10 @@ $( document ).ready( function(){
 				<li><a href="">9</a></li>
 				<li><a href="">10</a></li>
 			</ul>
-			<a href="" class="next">chevron_right</a>
+			<div>
+				<a href="" class="next">chevron_right</a>
+				<a href="" class="last">last_page</a>
+			</div>
 		</div><!--//pagination-->
 	</div><!--//page-contents-->
 </div><!--//container-->

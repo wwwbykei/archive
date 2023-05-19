@@ -34,8 +34,10 @@
 
 <div id="container">
 	<ul class="nav-direct-links">
-		<li><a href="about-greetings.html"><i class="material-icons">business</i>센터소개</a></li>
-		<li><a href="archive-list.html"><i class="material-icons-outlined">inventory_2</i>아카이브</a></li>
+		<li class="desktop-only"><a href="about-greetings.html"><i class="material-icons">business</i><span>센터소개</span></a></li>
+		<li class="desktop-only"><a href="archive-list.html"><i class="material-icons-outlined">inventory_2</i><span>아카이브</span></a></li>
+		<li class="desktop-only"><a href=""><i class="material-icons">import_contacts</i><span>제주어사전 다운로드</span></a></li>
+		<li><a href=""><i class="material-icons-outlined">call</i><span>제주어 종합상담실<br>1811-0515</span></a></li>
 	</ul>
 	<div class="page-title">
 		<h1>제주학 아카이브</h1>
@@ -53,6 +55,7 @@
 			        <li><a href="community-news-list.html">열린마당</a></li>
 			        <li><a href="information-administration-list.html">정보공개</a></li>
 			        <li><a href="about-greetings.html">센터소개</a></li>
+			        <li><a href="site-privacy.html">사이트 도우미</a></li>
 				</ul>
 			</li>
 			<li class="dropdown">
@@ -70,94 +73,138 @@
 	<div class="page-contents">
 		<div class="content-wrap">
 			<ul class="nav-tab-fill-triangle">
-				<li><a data-toggle="tab" href="#tab-field" class="btn">분야별</a></li>
-				<li class="active"><a data-toggle="tab" href="#tab-type" class="btn">유형별</a></li>
+				<li class="active"><a data-toggle="tab" href="#tab-field" class="btn">분야별</a></li>
+				<li><a data-toggle="tab" href="#tab-type" class="btn">유형별</a></li>
 			</ul>
 			<div class="tab-content nav-archive">
-				<div id="tab-field" class="tab-pane">
+				<div id="tab-field" class="tab-pane active">
 					<div class="category-main">
 						<ul>
-							<li class="has-sub">
-			        			<a href=""><i>category</i><span>총류</span></a>
+							<li class="has-sub active">
+			        			<a data-toggle="tab" href="#field-general"><i>category</i><span>총류</span></a>
 			        		</li>
 			        		<li>
-			        			<a href=""><i>psychology</i><span>철학</span></a>
+			        			<a href="#"><i>psychology</i><span>철학</span></a>
 			        		</li>
 			        		<li class="has-sub">
-			        			<a href=""><i class="ico-religion"></i><span>종교</span></a>
+			        			<a data-toggle="tab" href="#field-religion"><i class="ico-religion"></i><span>종교</span></a>
 			        		</li>
 			        		<li class="has-sub">
-			        			<a href=""><i class="ico-social-science"></i><span>사회과학</span></a>
+			        			<a data-toggle="tab" href="#field-social"><i class="ico-social-science"></i><span>사회과학</span></a>
 			        		</li>
 			        		<li class="has-sub">
-			        			<a href=""><i>science</i><span>순수과학</span></a>
+			        			<a data-toggle="tab" href="#field-science"><i>science</i><span>순수과학</span></a>
 			        		</li>
 			        		<li class="has-sub">
-			        			<a href=""><i>precision_manufacturing</i><span>기술과학</span></a>
+			        			<a data-toggle="tab" href="#field-technology"><i>precision_manufacturing</i><span>기술과학</span></a>
 			        		</li>
 			        		<li class="has-sub">
-			        			<a href=""><i>palette</i><span>예술</span></a>
+			        			<a data-toggle="tab" href="#field-art"><i>palette</i><span>예술</span></a>
 			        		</li>
 			        		<li class="has-sub">
-			        			<a href=""><i>translate</i><span>언어</span></a>
+			        			<a data-toggle="tab" href="#field-language"><i>translate</i><span>언어</span></a>
 			        		</li>
 			        		<li class="has-sub">
-			        			<a href=""><i>auto_stories</i><span>문학</span></a>
+			        			<a data-toggle="tab" href="#field-literature"><i>auto_stories</i><span>문학</span></a>
 			        		</li>
 			        		<li>
-			        			<a href=""><i>history</i><span>역사</span></a>
+			        			<a data-toggle="tab" href="#field-history"><i>history</i><span>역사</span></a>
 			        		</li>
 			        	</ul>
 					</div><!--//category-main-->
 					<div class="category-sub">
 						<ul id="field-general" class="active">
-							<li class="active"><a href="">제주학</a></li>
+							<li class="active"><a href="">전체</a></li>
+							<li><a href="">제주학</a></li>
 							<li><a href="">연보</a></li>
 							<li><a href="">학술조사</a></li>
 							<li><a href="">기타</a></li>
 						</ul>
 						<ul id="field-religion">
+							<li><a href="">전체</a></li>
 							<li><a href="">무속</a></li>
 							<li><a href="">불교</a></li>
 							<li><a href="">기타</a></li>
 						</ul>
+						<ul id="field-social">
+							<li><a href="">전체</a></li>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+						</ul>
+						<ul id="field-science">
+							<li><a href="">전체</a></li>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+						</ul>
+						<ul id="field-technology">
+							<li><a href="">전체</a></li>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+						</ul>
+						<ul id="field-art">
+							<li><a href="">전체</a></li>
+							<li><a href=""></a></li>
+							<li><a href=""></a></li>
+							<li><a href=""></a></li>
+						</ul>
+						<ul id="field-language">
+							<li><a href="">전체</a></li>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+						</ul>
+						<ul id="field-literature">
+							<li><a href="">전체</a></li>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+						</ul>
+						<ul id="field-history">
+							<li><a href="">전체</a></li>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+						</ul>
 					</div><!--//category-sub-->
 				</div><!--//tab-pane-->
-				<div id="tab-type" class="tab-pane active">
+				<div id="tab-type" class="tab-pane">
 					<div class="category-main">
 						<ul>
 							<li>
-			        			<a href=""><i>dns</i><span>제주학DB</span></a>
+			        			<a href="#"><i>dns</i><span>제주학DB</span></a>
 			        		</li>
 			        		<li>
-			        			<a href=""><i>translate</i><span>고문헌</span></a>
+			        			<a href="#"><i>translate</i><span>고문헌</span></a>
 			        		</li>
 			        		<li>
-			        			<a href=""><i>public</i><span>해외문헌</span></a>
+			        			<a href="#"><i>public</i><span>해외문헌</span></a>
 			        		</li>
 			        		<li>
-			        			<a href=""><i>map</i><span>고지도</span></a>
-			        		</li>
-			        		<li class="has-sub active">
-			        			<a href=""><i>photo</i><span>사진</span></a>
+			        			<a href="#"><i>map</i><span>고지도</span></a>
 			        		</li>
 			        		<li class="has-sub">
-			        			<a href=""><i>play_circle</i><span>동영상</span></a>
+			        			<a data-toggle="tab" href="#type-photo"><i>photo</i><span>사진</span></a>
 			        		</li>
 			        		<li class="has-sub">
-			        			<a href=""><i>mic</i><span>구술</span></a>
+			        			<a data-toggle="tab" href="#type-video"><i>play_circle</i><span>동영상</span></a>
 			        		</li>
 			        		<li class="has-sub">
-			        			<a href=""><i>article</i><span>신문기사</span></a>
+			        			<a data-toggle="tab" href="#type-voice"><i>mic</i><span>구술</span></a>
 			        		</li>
 			        		<li class="has-sub">
-			        			<a href=""><i>history_edu</i><span>제주역사</span></a>
+			        			<a data-toggle="tab" href="#type-newspaper"><i>article</i><span>신문기사</span></a>
+			        		</li>
+			        		<li class="has-sub">
+			        			<a data-toggle="tab" href="#type-history"><i>history_edu</i><span>제주역사</span></a>
 			        		</li>
 			        	</ul>
 					</div><!--//category-main-->
 					<div class="category-sub">
-						<ul id="type-photo" class="active">
-							<li class="active"><a href="">전체</a></li>
+						<ul id="type-photo">
+							<li><a href="">전체</a></li>
 							<li><a href="">버섯</a></li>
 							<li><a href="">야생화</a></li>
 							<li><a href="">노루</a></li>
@@ -166,11 +213,28 @@
 						</ul>
 						<ul id="type-video">
 							<li><a href="">전체</a></li>
-							<li><a href="">버섯</a></li>
-							<li><a href="">야생화</a></li>
-							<li><a href="">노루</a></li>
-							<li><a href="">곤충</a></li>
-							<li><a href="">새</a></li>
+							<li><a href="">한라산</a></li>
+							<li><a href="">자연유산</a></li>
+							<li><a href="">제주인</a></li>
+							<li><a href="">해녀</a></li>
+						</ul>
+						<ul id="type-voice">
+							<li><a href="">전체</a></li>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+						</ul>
+						<ul id="type-newspaper">
+							<li><a href="">전체</a></li>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+						</ul>
+						<ul id="type-history">
+							<li><a href="">전체</a></li>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
 						</ul>
 					</div><!--//category-sub-->
 				</div><!--//tab-pane-->
@@ -309,7 +373,10 @@
 		</div><!--//list-board-->
 		
 		<div class="pagination">
-			<a href="" class="prev">chevron_left</a>
+			<div>
+				<a href="" class="first">first_page</a>
+				<a href="" class="prev">chevron_left</a>
+			</div>
 			<ul>
 				<li class="active"><a href="">1</a></li>
 				<li><a href="">2</a></li>
@@ -322,7 +389,10 @@
 				<li><a href="">9</a></li>
 				<li><a href="">10</a></li>
 			</ul>
-			<a href="" class="next">chevron_right</a>
+			<div>
+				<a href="" class="next">chevron_right</a>
+				<a href="" class="last">last_page</a>
+			</div>
 		</div><!--//pagination-->
 	</div><!--//page-contents-->
 </div><!--//container-->

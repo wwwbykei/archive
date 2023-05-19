@@ -23,7 +23,6 @@
 <script src="js/jquery-1.11.0.min.js"></script>
 <script src="js/style.js"></script>
 <script src="js/dropdown.js"></script>
-<script src="js/modal.js"></script>
 </head>
 
 <body class="page-community">
@@ -34,8 +33,10 @@
 
 <div id="container">
 	<ul class="nav-direct-links">
-		<li><a href="about-greetings.html"><i class="material-icons">business</i>센터소개</a></li>
-		<li><a href="archive-list.html"><i class="material-icons-outlined">inventory_2</i>아카이브</a></li>
+		<li class="desktop-only"><a href="about-greetings.html"><i class="material-icons">business</i><span>센터소개</span></a></li>
+		<li class="desktop-only"><a href="archive-list.html"><i class="material-icons-outlined">inventory_2</i><span>아카이브</span></a></li>
+		<li class="desktop-only"><a href=""><i class="material-icons">import_contacts</i><span>제주어사전 다운로드</span></a></li>
+		<li><a href=""><i class="material-icons-outlined">call</i><span>제주어 종합상담실<br>1811-0515</span></a></li>
 	</ul>
 	<div class="page-title">
 		<h1>열린마당</h1>
@@ -53,6 +54,7 @@
 			        <li><a href="community-news-list.html">열린마당</a></li>
 			        <li><a href="information-administration-list.html">정보공개</a></li>
 			        <li><a href="about-greetings.html">센터소개</a></li>
+			        <li><a href="site-privacy.html">사이트 도우미</a></li>
 				</ul>
 			</li>
 			<li class="dropdown">
@@ -96,40 +98,14 @@
 		</div><!--//view-board-->
 		<div class="contents-footer">
 			<a href="community-freeboard-write.html" class="btn btn-fill-primary fl">글쓰기</a>
-			<a data-toggle="modal" data-target="#modal-board-password" class="btn btn-text fl">수정</a>
-			<a href="" class="btn btn-text fl">삭제</a>
+			<a href="community-freeboard-password.html" class="btn btn-text fl">수정</a>
+			<a href="community-freeboard-password.html" class="btn btn-text fl">삭제</a>
 			<a href="community-freeboard-list.html" class="btn btn-outline fr">목록</a>
 		</div><!--//contents-footer-->
 	</div><!--//page-contents-->
 </div><!--//container-->
 
 <footer class="global-footer"></footer>
-
-<!--Modal-->
-<div class="modal fade" id="modal-board-password" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-board-password" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="modal-title">
-            		<h3>본인확인</h3>
-            	</div>
-            	<button type="button" class="close" data-dismiss="modal" aria-label="Close">close</button>
-            </div>
-            <div class="modal-body">
-            	<form class="form">
-            		<p>&#8251; 비밀번호를 잃어버린 경우, JDI로 문의하시기 바랍니다. <a href="tel:064-726-6217">064-726-6217</a>, 담당자:이지은</p>
-            		<div class="form__group">
-						<input type="password" id="board-password" class="form__field" placeholder="글 작성할 때 입력한 비밀번호">
-						<label for="board-password" class="form__label">비밀번호</label>
-					</div>
-            	</form>
-            </div>
-            <div class="modal-footer">
-            	<button type="submit" class="btn btn-fill-primary">확인</button>
-            </div>
-        </div>
-    </div>
-</div><!--//modal-->
 
 </body>
 </html>
