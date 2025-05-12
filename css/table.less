@@ -1,0 +1,113 @@
+// main: "style.less"
+
+/* Tables */
+.table{width:100%;max-width:100%;
+	tr{
+		> th,> td{.valign(top);.c(#666);
+			@media @desktop{.p(@table-cell-padding)}
+		}
+	}
+	thead{
+		th{.valign}
+	}
+}
+.table-stripe{
+	th,td{.p(8px);
+		@media @desktop{.p(16px)}
+	}
+	thead{
+		th,td{.bb(#333)}
+	}
+	tbody{
+		th,td{.bb}
+	}
+}
+.table-scroll{.over-y-auto;max-height:200px;.bt(#333);.bb;
+	@media @fromtablet{max-height:300px}
+	.table-responsive{.bnone;
+		tbody tr{
+			&:last-child{.bnone}
+		}
+	}
+}
+.table-responsive{.table;max-width:@content-wrap-width;border-collapse:collapse;
+	@media @fromtablet{.mrl(auto)}
+	tr{
+		@media @fromtablet{.bb}
+	}
+	th,td{
+		@media @fromtablet{.tc}
+		@media @desktop{.fs(18)}
+	}
+	.cell-number,.cell-category,.cell-subject{.tl}
+	.cell-category{
+		@media @tablet{.w(64px)}
+		@media @desktop{.w(84px)}
+	}
+	.cell-number{
+		@media @mobile{.hidden}
+	}
+	.cell-subject{
+		.shape-reply + a{.ml(8px);
+			@media @fromtablet{.ml(12px)}
+		}
+		a + .label{.ml(4px)}
+		.shape-reply{.in-block;.w(8px);.h(8px);.bb(#999);.bl(#999);.valign(top);
+			@media @fromtablet{.w(12px);.h(12px)}
+		}
+	}
+	.cell-linebreak{.clear}
+	thead{
+		@media @mobile{.hidden}
+		tr{.bb(#333)}
+		th{.nowrap;.c(#333)}
+		th,td{
+			@media @tablet{
+				&:not(.cell-check):not(.cell-star){.p(8px 16px)}
+			}
+			@media @desktop{
+				&:not(.cell-check):not(.cell-star){.p(16px)}
+			}
+		}
+	}
+	tbody{
+		tr{
+			&:not(:last-child){
+				td{
+					&:last-child{.mb(32px)}
+				}
+			}
+		}
+		th,td{
+			@media @fromtablet{
+				&:not(.cell-check):not(.cell-star){.p(16px)}
+			}
+		}
+		td{
+			@media @mobile{.block;
+				&:first-child{.ptb(16px,2px)}
+				&:not(:first-child):not(.cell-category):not(.cell-subject){.fl;.w(auto);.mt(4px);.fs(12)}
+			}
+			&:not(.cell-check):not(.cell-star){
+				> label{
+					@media @fromtablet{.hidden}
+				}
+			}
+		}
+		.cell-category{.c(@color-primary-dark);
+			@media @mobile{.fs(12)}
+		}
+		.cell-subject{.c(#333);
+			@media @mobile{.mt(4px)}
+		}
+		tr.has-split{
+			td{
+				@media @mobile{
+					&:nth-child(n+3):not(.cell-linebreak):not(.cell-number):not(.cell-subject){.rel;.ml(12px);.pl(12px);
+						&:before{content:'';.block;.abs;top:3px;left:0;.w(1px);.h(10px);.bg(@border-color-base)}
+					}
+				}
+			}
+		}
+	}
+}

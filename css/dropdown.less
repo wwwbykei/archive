@@ -1,0 +1,48 @@
+// main: "style.less"
+
+// Dropdown menus
+.dropup,.dropdown {
+  position: relative;
+}
+
+.dropdown{.boxsize;.fs(14);
+	@media @desktop{.fs(16)}
+	> button{.text-ellipsis;.in-block;.boxsize;.rel;.w-full;.tl;font-size:inherit;.break;.nowrap;.pointer;.valign;
+		&:before{content:'expand_more';.abs;right:0;.fs(16);.material-icons;.c(#999);
+			@media @desktop{.fs(24)}
+		}
+	}
+	&.open{
+		> button{.radius-bottom(0);
+			&:before{content:'expand_less'}
+		}
+		> .dropdown-menu{.block}
+	}
+}
+.dropdown-border{.radius(@dropdown-radius);
+	> button{.p(@dropdown-padding-base);.b(@input-border-color);.radius(@dropdown-radius);
+		@media @desktop{.p(@dropdown-padding-large)}
+	}
+}
+.dropdown-underline{
+	> button{.p(@dropdown-padding-base);.pl(0);.bnone;.bb(@input-border-color);
+		@media @desktop{.p(@dropdown-padding-large);.pl(0)}
+	}
+}
+.dropdown-menu{display:none;.boxsize;.abs;top:100%;right:0;left:0;.p(@input-padding-base);.ptb(12px);.b;.radius-bottom(@dropdown-radius);.bgw;.z(@zindex-dropdown);
+	@media @desktop{.p(@input-padding-large);.ptb(16px)}
+	li{.boxsize;
+		&:hover{.boxsize}
+		a{.boxsize;.block;.ptb(4px);
+			@media @desktop{.ptb(8px)}
+		}
+	}
+}
+
+ .dropup,.navbar-fixed-bottom .dropdown {
+  .dropdown-menu {
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 2px;
+  }
+}

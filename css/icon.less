@@ -1,0 +1,19 @@
+// main: "style.less"
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined');
+
+.code-plus(@size:24px,@color,@thickness:1px){.block;.w(@size);.h(@size);background:linear-gradient(@color,@color),linear-gradient(@color,@color);background-position:center;background-size:100% @thickness,@thickness 100%;background-repeat:no-repeat}
+*[class^="ico-"]{.w(24px);.h(24px);.bgs;.text-hidden}
+.ico-facebook{.bgimg('icons/facebook.png');
+	&:hover{.bgimg('icons/facebook-color.png')}
+}
+.ico-instagram{.bgimg('icons/instagram.png');
+	&:hover{.bgimg('icons/instagram-color.png')}
+}
+.ico-youtube{.bgimg('icons/youtube.png');
+	&:hover{.bgimg('icons/youtube-color.png')}
+}
+.ico-religion{.bgimg('icons/religion.png')}
+.ico-social-science{.bgimg('icons/social-science.png')}
+.ico-search{.bgimg('icons/search.png')}
+.ico-search-white{.bgimg('icons/search-white.png')}
